@@ -9,19 +9,19 @@
 > code for displaying error messages 
 
 if (isset($_POST["submit"])) {
-    $message = $_POST['message'];
-    $email = $_POST['mail'];
-    $name = $_POST['name'];
+$message = $_POST['message'];
+$email = $_POST['mail'];
+$name = $_POST['name'];
 
-    if (!$_POST['name']){
-        $nameErr = 'enter name';
-    }
-    if (!$_POST['message']){
-        $messageErr = 'enter message';
-    }
-    if (!$_POST['name']){
-        $emailErr = 'enter email';
-    }
+if (!$_POST['name']){
+    $nameErr = 'enter name';
+ }
+if (!$_POST['message']){
+    $messageErr = 'enter message';
+ }
+if (!$_POST['name']){
+    $emailErr = 'enter email';
+}
 
 }
 
