@@ -54,7 +54,7 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Here is the subject';
-    $mail->Body    = $_POST["name"]." says ".$_POST['message'];
+    $mail->Body    = $_POST["name"]." says ".$_POST["message"]."<br> reply to ".$_POST["mail"];
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
